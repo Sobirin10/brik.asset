@@ -1,0 +1,140 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Styles for login page */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #218838;
+}
+
+/* Styles for dashboard */
+.dashboard-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Logo styles */
+.logo {
+    width: 150px; /* Ubah ukuran logo di sini */
+    display: block;
+    margin: 0 auto 20px;
+    opacity: 1; /* Mengatur transparansi logo, nilai antara 0 (transparan penuh) dan 1 (tidak transparan) */
+    transition: opacity 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+.logo:hover {
+    opacity: 1; /* Kembalikan logo menjadi tidak transparan saat di-hover */
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-container select,
+.dashboard-container button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dashboard-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Logo styles */
+.logo {
+    width: 150px; /* Ubah ukuran logo di sini */
+    display: block;
+    margin: 0 auto 20px;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Jarak pergeseran ke kanan */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.moving-text {
+    animation: slide 3s ease-in-out infinite; /* Durasi 3 detik, berulang tanpa henti */
+}
+
+.logout-button {
+    background-color: #f44336; /* Merah */
+    color: white; /* Teks putih */
+    padding: 10px 20px; /* Spasi dalam tombol */
+    border: none; /* Tanpa garis tepi */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Kursor pointer saat hover */
+    transition: background-color 0.3s ease; /* Transisi warna */
+    margin-top: 20px; /* Jarak atas */
+}
+
+.logout-button:hover {
+    background-color: #c62828; /* Warna lebih gelap saat hover */
+}
